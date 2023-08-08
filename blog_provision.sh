@@ -4,8 +4,8 @@
 # // SPDX-License-Identifier: MIT-0
 
 # Define params
-# export EKSCLUSTER_NAME=eks-quickstart
-# export AWS_REGION=us-east-1
+export EKSCLUSTER_NAME=eks-quickstart
+export AWS_REGION=us-east-1
 export EMR_NAMESPACE=emr
 export EKS_VERSION=1.24
 export EMRCLUSTER_NAME=emr-on-$EKSCLUSTER_NAME
