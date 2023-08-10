@@ -147,9 +147,9 @@ cloudWatch:
 EOF
 
 # create eks cluster in two AZs
-eksctl create cluster -f /tmp/ekscluster.yaml
+# eksctl create cluster -f /tmp/ekscluster.yaml
 # if EKS cluster exists, comment out the line above, uncomment this line
-# eksctl create nodegroup -f /tmp/ekscluster.yaml
+eksctl create nodegroup -f /tmp/ekscluster.yaml
 aws eks update-kubeconfig --name $EKSCLUSTER_NAME --region $AWS_REGION
 
 echo "==============================================="
